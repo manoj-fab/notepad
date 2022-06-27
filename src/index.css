@@ -1,0 +1,115 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: flex-start;
+  height: 100vh;
+  gap: 3px;
+}
+
+/* header css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addNotes,
+.closeNotes {
+  font-size: 30px;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  background-color: lightgray;
+  height: 100vh;
+  padding: 0 10px;
+  border-radius: 7px;
+  overflow-y: auto;
+  width: 30vw;
+}
+.notes {
+  height: 50px;
+  background-color: blanchedalmond;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notesDis {
+  flex-grow: 2;
+  align-self: center;
+  padding: 20px 10px;
+}
+.deleteButton {
+  color: darkgray;
+  font-size: 26px;
+  margin-right: 10px;
+}
+/* notes textarea */
+.separator {
+  width: 1px;
+  border-right: 1px dashed #6c757d;
+}
+.textareaContainer {
+  width: 70vw;
+  height: 100vh;
+  background-color: lightgray;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+.notesTextarea {
+  background-color: #ffebcd;
+  border: unset;
+  font-size: 15px;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  height: calc(100% - 58px);
+  resize: none;
+}
+.notesTextarea::placeholder {
+  color: darkgray;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.saveButton,
+.closeNotes {
+  background-color: #6c757d;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 28px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.closeNotes {
+  color: #6c757d;
+  background-color: #d3d3d3;
+  border: 1px solid #6c757d;
+}
+.inputNotesFooter {
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+}
